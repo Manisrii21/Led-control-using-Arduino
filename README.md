@@ -1,5 +1,6 @@
+## NAME: M MANI SRI LATHA
+## REG NO: 212223110025
 # Led-control-using-Arduino
-
 ## AIM
 To design and implement a system for LED control using an Arduino microcontroller and a push button.
 
@@ -59,27 +60,37 @@ Weighing Machines </br>
 
 ## CIRCUIT DIAGRAM
 
+
 ## PROGRAM
 ```
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(6,OUTPUT);
+  pinMode(13,OUTPUT);
   pinMode(2,INPUT);
+
 }
 
 void loop() {
   int status=digitalRead(2);
   if(status==HIGH)
   {
-    digitalWrite(6,HIGH);
+    digitalWrite(13,HIGH);
     delay(1000);
-    digitalWrite(6,LOW);
+    digitalWrite(13,LOW);
     delay(1000);
   }
   else
-  digitalWrite(6,LOW);
+  {
+    digitalWrite(13,LOW);
+  }
 }
+
 ```
 ## OUTPUT
+## SWITCH ON
+<img width="1184" height="833" alt="Screenshot 2025-08-21 085545" src="https://github.com/user-attachments/assets/cfb53ef7-5dcf-4a55-a772-13e622d4a68f" />
+
+## SWITCH OFF
+<img width="1187" height="837" alt="Screenshot 2025-08-21 085604" src="https://github.com/user-attachments/assets/978b546f-96eb-4c9a-bd41-4e817cce904b" />
 
 ## RESULT
+Thus the program to design and implement a system for LED control using an Arduino microcontroller and a push button is executed successfully.

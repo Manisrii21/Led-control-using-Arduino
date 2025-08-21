@@ -60,7 +60,26 @@ Weighing Machines </br>
 ## CIRCUIT DIAGRAM
 
 ## PROGRAM
+```
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(6,OUTPUT);
+  pinMode(2,INPUT);
+}
 
+void loop() {
+  int status=digitalRead(2);
+  if(status==HIGH)
+  {
+    digitalWrite(6,HIGH);
+    delay(1000);
+    digitalWrite(6,LOW);
+    delay(1000);
+  }
+  else
+  digitalWrite(6,LOW);
+}
+```
 ## OUTPUT
 
 ## RESULT

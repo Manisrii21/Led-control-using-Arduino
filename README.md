@@ -65,25 +65,25 @@ Weighing Machines </br>
 ## PROGRAM
 ```
 void setup() {
-  pinMode(13,OUTPUT);
+  // put your setup code here, to run once:
+  pinMode(6,OUTPUT);
   pinMode(2,INPUT);
-
 }
 
 void loop() {
   int status=digitalRead(2);
   if(status==HIGH)
   {
-    digitalWrite(13,HIGH);
+    digitalWrite(6,HIGH);
     delay(1000);
-    digitalWrite(13,LOW);
+    digitalWrite(6,LOW);
     delay(1000);
   }
   else
-  {
-    digitalWrite(13,LOW);
-  }
+  digitalWrite(6,LOW);
 }
+
+
 
 ```
 ## OUTPUT
